@@ -13,14 +13,19 @@ body{
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin: 30px 0px;
 }
 
 .agri-logo{
   display: block;
 }
-
+button{
+  background-color: #37002c;
+  color: white;
+}
 .row1 {
-    display: flex;
+    display: flex;;
+    color: white;
     width: 100%;
     justify-content: space-between;
   }
