@@ -1,5 +1,9 @@
 html, body{
   height: 100%;
+  background: rgb(139,58,132);
+}
+.logo-container{
+  background: rgb(52,3,47);
 }
 .agri-logo{
     margin: 0 auto;
