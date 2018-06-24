@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Agora Web Sample</title>
+<title>AgriConnect</title>
 <link rel="stylesheet" href="vendor/bootstrap.min.css">
 <!-- Changed by MarinaF -->
 <script src="AgoraRTCSDK-2.2.0.js"></script>
@@ -85,9 +85,9 @@ function join() {
   document.getElementById("video").disabled = true;
   var channel_key = null;
 
-  console.log("Init AgoraRTC client with vendor key: " + key.value);
+  console.log("Init AgoraRTC client with vendor key: " + be5689b093314bcb8c0fd39117ea22a6);
   client = AgoraRTC.createClient({mode: 'interop'});
-  client.init(key.value, function () {
+  client.init(be5689b093314bcb8c0fd39117ea22a6, function () {
     console.log("AgoraRTC client initialized");
     client.join(channel_key, channel.value, null, function(uid) {
       console.log("User " + uid + " join channel successfully");
@@ -182,6 +182,9 @@ function join() {
   });
 }
 
+
+
+
 function leave() {
   document.getElementById("leave").disabled = true;
   client.leave(function () {
@@ -257,6 +260,7 @@ function getDevices() {
 //audioSelect.onchange = getDevices;
 //videoSelect.onchange = getDevices;
 getDevices();
+join();
 </script>
 </body>
 </html>
