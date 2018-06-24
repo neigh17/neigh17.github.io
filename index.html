@@ -3,24 +3,34 @@
 <head>
 <title>AgriConnect</title>
 <!-- Changed by MarinaF -->
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="styles.css">
 <script src="AgoraRTCSDK-2.2.0.js"></script>
 <script src="vendor/jquery.js"></script>
 </head>
 
 <body>
-<img src="/agrichain_header_logo.png" alt="" class="agri-logo">
+  <div class="logo-container">
+<img src="agrichain_header_logo.png" alt="" class="agri-logo">
+</div>
 <div id="div_device" class="panel panel-default">
-<div class="select">
+
+<div class="row1">
+
+
+<div class="select" class="row1.1">
 <label for="audioSource">Audio source: </label><select id="audioSource"></select>
 </div>
-<div class="select">
+
+<div class="select" class="row1.2">
 <label for="videoSource">Video source: </label><select id="videoSource"></select>
 </div>
 </div>
 
+</div>
+
 <div id="div_join" class="panel panel-default">
-<div class="panel-body">
+
+<div class="panel-body" class="row2">
 
 Channel: <input id="channel" type="text" value="1000" size="4"></input>
 Host: <input id="video" type="checkbox" checked></input>
