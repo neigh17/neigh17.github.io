@@ -2,34 +2,40 @@ html{
   height: 100%;
 }
 body{
+  height: 100%;
   background: rgb(139,58,132);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
 }
 
-
-.logo-container{
-  background: rgb(52,3,47);
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.agri-logo{
-    width: 50%;
-}
 .row1{
+    display: flex;
   width: 100%;
 }
 .row1.1{
+    display: flex;
   width:50%;
 }
 .row1.2{
+    display: flex;
   width: 50%;
 }
 .row2{
+
   display: flex;
   width: 100%;
   justify-content: space-around;
+}
+.logo-container{
+  display: flex;
+  background: rgb(52,3,47
+  justify-content: center;
+  align-items: center;
+}
+
+.agri-logo{
+    width: 50%;
+    height: auto;
 }
